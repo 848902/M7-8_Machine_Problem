@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipino Snacks</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+    <h1>Snacks Online Order</h1>
+
+    <div class="snacks-container">
+        <div class="snack">
+            <img src="taho.jpg" alt="Snack 1" class="snack-img">
+            <div class="snack-details">
+                <h3>Taho </h3>
+                <p class="price">$8.99</p>
+                <div class="form-group">
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" class="form-control quantity" id="quantity1" name="quantity1" min="0">
+                </div>
+                <button type="button" class="btn btn-primary add-to-cart" data-price="5.99" data-quantity="quantity1">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="snack">
+            <img src="lumpia.jpg" alt="Snack 2" class="snack-img">
+            <div class="snack-details">
+                <h3>Lumpia</h3>
+                <p class="price">$3.32</p>
+                <div class="form-group">
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" class="form-control quantity" id="quantity2" name="quantity2" min="0">
+                </div>
+                <button type="button" class="btn btn-primary add-to-cart" data-price="4.50" data-quantity="quantity2">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="snack">
+            <img src="kwek kwek.jpg" alt="Snack 2" class="snack-img">
+            <div class="snack-details">
+                <h3>Kwek kwek</h3>
+                <p class="price">$1.20</p>
+                <div class="form-group">
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" class="form-control quantity" id="quantity2" name="quantity2" min="0">
+                </div>
+                <button type="button" class="btn btn-primary add-to-cart" data-price="4.50" data-quantity="quantity2">Add to Cart</button>
+            </div>
+        </div>
+   
+        <div class="snack">
+            <img src="mango.jpg" alt="Snack 2" class="snack-img">
+            <div class="snack-details">
+                <h3>Dried mangoes</h3>
+                <p class="price">$10.50</p>
+                <div class="form-group">
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" class="form-control quantity" id="quantity2" name="quantity2" min="0">
+                </div>
+                <button type="button" class="btn btn-primary add-to-cart" data-price="4.50" data-quantity="quantity2">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="snack">
+            <img src="halu-halo.jpg" alt="Snack 2" class="snack-img">
+            <div class="snack-details">
+                <h3>Halu-halo</h3>
+                <p class="price">$5.60</p>
+                <div class="form-group">
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" class="form-control quantity" id="quantity2" name="quantity2" min="0">
+                </div>
+                <button type="button" class="btn btn-primary add-to-cart" data-price="4.50" data-quantity="quantity2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="total-container">
+        <h2>Total Price:</h2>
+        <p id="totalPrice" >$0.00</p>
+        <button type="button" class="btn btn-success checkout">Checkout</button>
+    </div>
+
+    <form id="userInfoForm">
+        <h2>User Information</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" class="form-control" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" class="form-control" id="age" name="age" min="1" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Order</button>
+    </form>
+
+    <div class="social-links">
+        <h2>Follow Us</h2>
+        <a href="https://www.facebook.com" target="_blank" class="btn btn-primary">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank" class="btn btn-primary">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank" class="btn btn-primary">Instagram</a>
+    </div>
+
+    <div id="orderResult"></div>
+</div>
